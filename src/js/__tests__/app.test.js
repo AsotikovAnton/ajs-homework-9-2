@@ -2,7 +2,7 @@ import Validator from '../app';
 
 test('Успешная валидация', () => {
   const validator = new Validator();
-  const received = validator.validateUsername('T-800_t');
+  const received = validator.validateUsername('Thd111bt');
   expect(received).toBe(true);
 });
 
