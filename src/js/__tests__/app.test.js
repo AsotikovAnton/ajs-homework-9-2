@@ -1,8 +1,20 @@
 import Validator from '../app';
 
-test('Успешная валидация', () => {
+test('Успешная валидация AL', () => {
   const validator = new Validator();
-  const received = validator.validateUsername('Thd111bt');
+  const received = validator.validateUsername('AL');
+  expect(received).toBe(true);
+});
+
+test('Успешная валидация C3-PO', () => {
+  const validator = new Validator();
+  const received = validator.validateUsername('C3-PO');
+  expect(received).toBe(true);
+});
+
+test('Успешная валидация AR4ANG3L', () => {
+  const validator = new Validator();
+  const received = validator.validateUsername('AR4ANG3L');
   expect(received).toBe(true);
 });
 
